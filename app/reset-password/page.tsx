@@ -18,7 +18,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 
-export default function ResetPasswordPage() {
+function ResetPasswordForm() {
   const searchParams = useSearchParams();
   const email = searchParams.get("email");
 
@@ -95,8 +95,7 @@ export default function ResetPasswordPage() {
 
   if (!email) {
     return (
-      <Suspense>
-<div className="container flex h-screen w-screen flex-col items-center justify-center">
+      <div className="container flex h-screen w-screen flex-col items-center justify-center">
         <div className="mx-auto flex w-full flex-col justify-center space-y-6 sm:w-[350px]">
           <Card>
             <CardHeader>
@@ -113,9 +112,6 @@ export default function ResetPasswordPage() {
           </Card>
         </div>
       </div>
-
-      </Suspense>
-      
     );
   }
 
@@ -241,5 +237,13 @@ export default function ResetPasswordPage() {
         </Card>
       </div>
     </div>
+  );
+}
+
+export default function ResetPasswordPage() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <ResetPasswordForm />
+    </Suspense>
   );
 }
