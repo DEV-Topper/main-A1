@@ -221,7 +221,7 @@ export default function LoginPage() {
         >
           <TabsList className="grid w-full grid-cols-2">
             <TabsTrigger className="data-[state=active]:bg-blue data-[state=active]:text-white" value="student">Student</TabsTrigger>
-            <TabsTrigger className="data-[state=active]:bg-white data-[state=active]:text-black" value="teacher">Instructor</TabsTrigger>
+            <TabsTrigger className="data-[state=active]:bg-blue data-[state=active]:text-white" value="teacher">Instructor</TabsTrigger>
           </TabsList>
           <TabsContent value="student">
             <Card>

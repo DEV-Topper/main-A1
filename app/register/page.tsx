@@ -312,7 +312,7 @@ export default function RegisterPage() {
                 Student
               </TabsTrigger>
               <TabsTrigger
-                className="data-[state=active]:bg-white data-[state=active]:text-black"
+                className="data-[state=active]:bg-blue data-[state=active]:text-white"
                 value="teacher"
               >
                 Instructor
