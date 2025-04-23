@@ -220,8 +220,8 @@ export default function LoginPage() {
           onValueChange={setUserType}
         >
           <TabsList className="grid w-full grid-cols-2">
-            <TabsTrigger value="student">Student</TabsTrigger>
-            <TabsTrigger value="teacher">Instructor</TabsTrigger>
+            <TabsTrigger className="data-[state=active]:bg-blue" value="student">Student</TabsTrigger>
+            <TabsTrigger className="data-[state=active]:bg-white" value="teacher">Instructor</TabsTrigger>
           </TabsList>
           <TabsContent value="student">
             <Card>

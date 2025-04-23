@@ -580,9 +580,9 @@ export default function StudentDashboard() {
           <div className="mt-8">
             <Tabs defaultValue="in-progress">
               <TabsList className="mb-4">
-                <TabsTrigger value="in-progress">In Progress</TabsTrigger>
-                <TabsTrigger value="completed">Completed</TabsTrigger>
-                <TabsTrigger value="recommended">Recommended</TabsTrigger>
+                <TabsTrigger className="data-[state=active]:bg-blue" value="in-progress">In Progress</TabsTrigger>
+                <TabsTrigger className="data-[state=active]:bg-white" value="completed">Completed</TabsTrigger>
+                <TabsTrigger className="data-[state=active]:bg-lightblue" value="recommended">Recommended</TabsTrigger>
               </TabsList>
               <TabsContent value="in-progress">
                 <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
